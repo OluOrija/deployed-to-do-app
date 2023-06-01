@@ -16,6 +16,8 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    rm -rf node_modules
     npm install
+    npm i react-scripts
     npm run client
   displayName: 'Build client'
